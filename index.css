@@ -1,0 +1,155 @@
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #24145e;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes appearUfo {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shaking {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes soaking {
+    to {
+        transform: translateY(-250px) scale(0); 
+    }
+}
+
+@keyframes disappearUfo {
+    to {
+        transform: scaleX(0);
+    }
+}
+
+#planet_1 {
+    animation: rotation 4s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#planet_2 {
+    animation: rotation 6s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_1,
+#star_6 {
+    animation: twinkle 4s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_2,
+#star_5,
+#star_7 {
+    animation: twinkle 6s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_3,
+#star_8 {
+    animation: twinkle 9s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+#star_4,
+#star_9 {
+    animation: twinkle 11s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#UFO-beam {
+    animation: appearUfo 3s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#UFO-beam-hiding {
+    animation: disappearUfo 2s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#number-0 {
+    animation: slideTop 3s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#number-0-soaking {
+    animation: soaking 2s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#alien_hand-L, 
+#alien_hand-R {
+    animation: shaking 1s infinite;
+}
+
