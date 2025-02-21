@@ -17,7 +17,7 @@
 </a>
 
 ### 3. Scroll Interaction 
-<img src="[https://github.com/user-attachments/assets/6f82addc-2fb7-4a2a-8be2-b7130baec0d9](https://github.com/user-attachments/assets/1e3cfed6-7fbb-456f-a646-c54889fd176c)" width="500"/> <br>
+<img src="https://github.com/user-attachments/assets/6f82addc-2fb7-4a2a-8be2-b7130baec0d9](https://github.com/user-attachments/assets/1e3cfed6-7fbb-456f-a646-c54889fd176c" width="500"/> <br>
 <a href="https://github.com/hanzsver/interative-web/tree/main/03.%20Kakaobank">
 ▶︎ View Code
 </a>
