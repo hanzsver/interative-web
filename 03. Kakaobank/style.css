@@ -173,7 +173,7 @@ ul {
 }
 /* ================================================================== */
 body {
-  color: #000;
+  color: #111;
   font-size: 14px;
   line-height: 1.5;
   font-family: Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif,
@@ -184,7 +184,7 @@ body {
 }
 
 #wrapper {
-  background-color: #111;
+  background-color: #f9f9f9;
   overflow: hidden;
 }
 
@@ -232,7 +232,7 @@ main {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #fff;
+  color: #111;
 }
 
 .intro_main .main_arrow:after {
@@ -247,6 +247,7 @@ main {
   padding: 3.5px 2.5px;
   object-fit: contain;
   animation: upDown 1s infinite;
+  filter: brightness(0.1);
 }
 
 @keyframes upDown {
@@ -273,7 +274,7 @@ main {
 .panel1 .panel1_list {
   max-width: 383px;
   min-width: 319px;
-  color: #000;
+  color: #111;
   font-size: 48px;
   line-height: 0.8;
   text-align: center;
@@ -294,10 +295,15 @@ main {
 .panel1 .panel1_list li {
   position: relative;
   display: inline;
+  color: #e5e5e5;
 }
 
 .panel1 .panel1_list li.on {
-  color: #fff;
+  color: #111;
+}
+
+.panel1 .panel1_list li.on:before {
+  opacity: 1;
 }
 
 .panel1 .panel1_list li:before {
@@ -308,6 +314,7 @@ main {
   background-size: 53px 53px;
   -webkit-transform: translateY(8px);
   transform: translateY(8px);
+  opacity: 0.1;
 }
 
 .panel1 .panel1_list li.icon-1:before {
@@ -553,4 +560,193 @@ main {
   width: 100%;
   vertical-align: top;
   transform: translate(79px, -13px) rotate(23deg);
+}
+
+#video-section {
+  margin-bottom: 400px;
+}
+
+#fixed-wrapper {
+  height: 350px;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  filter: brightness(0.98);
+}
+
+#fixed-description {
+  max-width: 350px;
+  margin: 30px auto 0;
+  text-align: right;
+}
+
+#fixed-description p {
+  line-height: 1.3;
+  color: #111;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#bank-beyond-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#bank-beyond-wrapper #rocket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+#bank-beyond-outer {
+  order: 0;
+  place-self: auto;
+  grid-area: auto;
+  z-index: auto;
+  float: none;
+  flex-shrink: 1;
+  display: block;
+  margin: 0px 30px;
+  inset: auto;
+  position: relative;
+  flex-basis: auto;
+  overflow: visible;
+  box-sizing: border-box;
+  width: 315px;
+  height: 500px;
+  padding: 0px;
+}
+
+#bank-beyond {
+  translate: none;
+  rotate: none;
+  scale: none;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  max-width: 315px;
+  width: 315px;
+  max-height: 500px;
+  height: 500px;
+  padding: 0px 0px 136px;
+  transform: translate(0px, 0px);
+}
+
+#bank-beyond-img {
+  filter: brightness(0.1);
+}
+
+.panel4 {
+  padding: 100px 24px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.panel4_header {
+  width: 100%;
+  max-width: 768px;
+  min-height: 82px;
+  margin: 0 auto 40px;
+}
+
+.panel4_tit {
+  font-size: 32px;
+  font-weight: 800;
+  padding: 0 12px;
+  line-height: 40px;
+  color: #222;
+}
+
+.panel4_subtit {
+  font-size: 16px;
+  color: #888;
+  padding: 0 12px;
+  margin-top: 8px;
+}
+
+.panel4_slider {
+  position: relative;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.panel4_slider_wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  border-radius: 30px;
+}
+
+.panel4_content {
+  display: flex;
+  gap: 20px;
+}
+
+.panel4_btn {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 140px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.panel4_btn button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.panel4_btn button.prev {
+  transform: scaleX(-1);
+}
+
+.panel4_btn button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.panel4_benefits {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.panel4_benefits img {
+  width: 374px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
